@@ -8,6 +8,7 @@ $gray-medium-light: #eaeaea;
 /* universal */
 
 body {
+  background-color: #ffd1dc;
   padding-top: 60px;
 }
 
@@ -60,14 +61,26 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: white;
+  color: #FFf;
   text-transform: uppercase;
   letter-spacing: -1px;
   padding-top: 9px;
   font-weight: bold;
   &:hover {
-    color: white;
+    color: #FFB6C1;
     text-decoration: none;
+  }
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  &hover {
+    color: #FF69B4;
+  }
+  &active {
+    background-color: #FF69B4;
+    color: #fff;
   }
 }
 
