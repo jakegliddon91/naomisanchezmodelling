@@ -1,19 +1,12 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Dancing+Script|Great+Vibes');
-/* // Extra small devices (portrait phones, less than 576px)
+// Extra small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) { ... }
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) { ... } */
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) { 
- 
-  /* mixins, variables, etc. */
+@media (min-width: 576px) { 
+/* mixins, variables, etc. */
 
 $gray-medium-light: #eaeaea;
 
@@ -30,6 +23,7 @@ body {
 
 .jumbotron {
   background-color: #ffd1dc;
+  width: 100%;
 }
 
 section {
@@ -69,18 +63,14 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: #ffd1dc;
-  &hover {
-    colour: #FF69B4;
-    text-decoration: none;
-  }
+  color: #fff;
 }
 
 p {
   font-family: 'Great Vibes', cursive;
   font-size: 1.3em;
   line-height: 1.7em;
-  color: #ffd1dc;
+  color: #fff;
 }
 
 
@@ -150,10 +140,9 @@ footer {
 }
 }
 
-// Extra large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) { 
-
-  /* mixins, variables, etc. */
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { 
+/* mixins, variables, etc. */
 
 $gray-medium-light: #eaeaea;
 
@@ -164,9 +153,13 @@ $gray-medium-light: #eaeaea;
 }
 
 body {
-  font-family: 'Dancing Script', cursive;
-  background-color: #ffd1dc;
+  background-color: #fff;
   padding-top: 60px;
+}
+
+.jumbotron {
+  background-color: #ffd1dc;
+  width: 100%;
 }
 
 section {
@@ -187,42 +180,44 @@ textarea {
 /* typography */
 
 h1, h2, h3, h4, h5, h6 {
-  line-height: 1;
+  line-height: 1.5;
 }
 
 h1 {
+  font-family: 'Dancing Script', cursive;
   font-size: 3em;
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+  color: #ffd1dc;
 }
 
 h2 {
-  font-size: 1.2em;
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.37em;
   letter-spacing: -1px;
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $gray-light;
-  &hover {
-    colour: #FF69B4;
-    text-decoration: none;
-  }
+  color: #fff;
 }
 
 p {
-  font-size: 1.1em;
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.3em;
   line-height: 1.7em;
+  color: #fff;
 }
 
 
 /* header */
 
 #logo {
+  font-family: 'Dancing Script', cursive;
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #FFF;
+  color: #ffd1dc;
   padding-top: 9px;
   font-weight: bold;
   &:hover {
@@ -232,7 +227,286 @@ p {
 }
 
 a {
+  font-family: 'Dancing Script', cursive;
+  color: #ffd1dc;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5em;
+  &hover {
+    color: #FF69B4;
+  }
+  &active {
+    background-color: #FF69B4;
+    color: #fff;
+  }
+}
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $gray-medium-light;
+  color: $gray-light;
+  a {
+    color: $gray;
+    &:hover {
+      color: $gray-darker;
+    }
+  }
+  small {
+    float: left;
+    #rails {
+    width: 20px;
+    height: 20px;
+    }
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+    li #insta {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+ 
+/* mixins, variables, etc. */
+
+$gray-medium-light: #eaeaea;
+
+/* universal */
+
+#place {
+  border-radius: 50%;
+}
+
+body {
+  background-color: #fff;
+  padding-top: 60px;
+}
+
+.jumbotron {
+  background-color: #ffd1dc;
+  width: 100%;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #ffd1dc;
+}
+
+h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.37em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
   color: #fff;
+}
+
+p {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.3em;
+  line-height: 1.7em;
+  color: #fff;
+}
+
+
+/* header */
+
+#logo {
+  font-family: 'Dancing Script', cursive;
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #ffd1dc;
+  padding-top: 9px;
+  font-weight: bold;
+  &:hover {
+    color: #FFB6C1;
+    text-decoration: none;
+  }
+}
+
+ul li a {
+  font-family: 'Dancing Script', cursive;
+  color: #ffd1dc;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.5em;
+  &hover {
+    color: #FF69B4;
+  }
+  &active {
+    background-color: #FF69B4;
+    color: #fff;
+  }
+}
+
+a {
+  color: #fff;
+}
+
+/* footer */
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $gray-medium-light;
+  color: $gray-light;
+  a {
+    color: $gray;
+    &:hover {
+      color: $gray-darker;
+    }
+  }
+  small {
+    float: left;
+    #rails {
+    width: 20px;
+    height: 20px;
+    }
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+    li #insta {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+
+/* mixins, variables, etc. */
+
+$gray-medium-light: #eaeaea;
+
+/* universal */
+
+#place {
+  border-radius: 50%;
+}
+
+body {
+  background-color: #fff;
+  padding-top: 60px;
+}
+
+.jumbotron {
+  background-color: #ffd1dc;
+  width: 100%;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+  h1 {
+    margin-bottom: 10px;
+  }
+}
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.5;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #ffd1dc;
+}
+
+h2 {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.37em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #fff;
+}
+
+p {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.3em;
+  line-height: 1.7em;
+  color: #fff;
+}
+
+
+/* header */
+
+#logo {
+  font-family: 'Dancing Script', cursive;
+  float: left;
+  margin-right: 10px;
+  font-size: 1.7em;
+  color: #ffd1dc;
+  padding-top: 9px;
+  font-weight: bold;
+  &:hover {
+    color: #FFB6C1;
+    text-decoration: none;
+  }
+}
+
+a {
+  font-family: 'Dancing Script', cursive;
+  color: #ffd1dc;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.5em;
