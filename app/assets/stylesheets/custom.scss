@@ -24,8 +24,12 @@ $gray-medium-light: #eaeaea;
 }
 
 body {
-  background-color: #ffd1dc;
+  background-color: #fff;
   padding-top: 60px;
+}
+
+.jumbotron {
+  background-color: #ffd1dc;
 }
 
 section {
@@ -55,6 +59,7 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+  color: #ffd1dc;
 }
 
 h2 {
@@ -64,7 +69,7 @@ h2 {
   margin-bottom: 30px;
   text-align: center;
   font-weight: normal;
-  color: $gray-light;
+  color: #ffd1dc;
   &hover {
     colour: #FF69B4;
     text-decoration: none;
@@ -75,6 +80,7 @@ p {
   font-family: 'Great Vibes', cursive;
   font-size: 1.3em;
   line-height: 1.7em;
+  color: #ffd1dc;
 }
 
 
@@ -85,7 +91,7 @@ p {
   float: left;
   margin-right: 10px;
   font-size: 1.7em;
-  color: #FFF;
+  color: #ffd1dc;
   padding-top: 9px;
   font-weight: bold;
   &:hover {
@@ -96,7 +102,7 @@ p {
 
 a {
   font-family: 'Dancing Script', cursive;
-  color: #fff;
+  color: #ffd1dc;
   text-decoration: none;
   font-weight: bold;
   font-size: 1.5em;
