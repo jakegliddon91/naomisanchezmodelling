@@ -1,29 +1,33 @@
 require 'test_helper'
 
 class PagesControllerTest < ActionDispatch::IntegrationTest
-  test "should get index" do
-    get pages_index_url
-    assert_response :success
+
+  def setup
+    @base_title = "Naomi Sanchez Modeling"
   end
 
-  test "should get about" do
-    get pages_about_url
+  test "should get index" do
+    get root_path
     assert_response :success
+    assert_select "title", "Home | Naomi Sanchez Modeling"
   end
 
   test "should get portfolio" do
-    get pages_portfolio_url
+    get portfolio_path
     assert_response :success
+    assert_select "title", "Portfolio | Naomi Sanchez Modeling"
   end
 
-  test "should get writing" do
-    get pages_writing_url
+  test "should get about" do
+    get about_path
     assert_response :success
+    assert_select "title", "About | Naomi Sanchez Modeling"
   end
 
   test "should get contact" do
-    get pages_contact_url
+    get contact_path
     assert_response :success
+    assert_select "title", "Contact | Naomi Sanchez Modeling"
   end
 
 end
